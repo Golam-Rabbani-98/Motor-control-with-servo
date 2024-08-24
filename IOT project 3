@@ -1,0 +1,18 @@
+#include <Servo.h>
+ Servo ab;
+void setup() {
+  ab.attach(11);
+}
+
+void loop() {
+  ab.write(64);
+  delay(500);
+  ab.write(100);
+  delay(500);
+  ab.write(140);
+  delay(500);
+  ab.write(170);
+  delay(500);
+  ab.write(0);
+  delay(500);
+}
